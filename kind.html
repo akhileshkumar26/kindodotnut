@@ -26,7 +26,7 @@
             <div id="chart" style="background: center no-repeat url('../content/shared/styles/world-map.png');"></div>
         </div>
         <script>
-             
+              function createChart() {
                 $("#chart").kendoChart({
                     title: {
                         position: "bottom",
@@ -77,8 +77,8 @@
                     }
                 });
           
-
-            
+                 }
+                $(document).ready(createChart);
         </script>
     </div>
 
